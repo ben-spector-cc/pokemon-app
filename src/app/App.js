@@ -1,18 +1,10 @@
-import { useEffect } from 'react';
-
 import { FavoriteRecipes } from '../features/favoriteRecipes/FavoriteRecipes.js';
 import { Search } from '../features/search/Search.js';
 import { AllRecipes } from '../features/allRecipes/AllRecipes.js';
 
-import { loadData } from '../features/allRecipes/allRecipesSlice'
-
 export function App(props) {
   const {state, dispatch} = props;
-
-  useEffect(() => {
-    dispatch(loadData());
-  }, [])
-
+  
   return (
     <main>
       <section>
