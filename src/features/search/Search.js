@@ -3,7 +3,8 @@ import { setSearchTerm, clearSearchTerm } from './searchSlice.js';
 export const Search = ({ searchTerm, dispatch }) => {
   
   const onSearchChangeHandler = (e) => {
-    dispatch(setSearchTerm(e.target.value));
+    const userInput = e.target.value;
+    dispatch(setSearchTerm(userInput));
   };
   
   const onClearSearchTermHandler = () => {
