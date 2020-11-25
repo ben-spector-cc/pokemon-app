@@ -1,5 +1,5 @@
 import { addRecipe } from '../favoriteRecipes/favoriteRecipesSlice.js';
-import { loadData } from '../features/allRecipes/allRecipesSlice'
+import { loadData } from './allRecipesSlice'
 
 import { useEffect } from 'react';
 
