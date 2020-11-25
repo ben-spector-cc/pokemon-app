@@ -3,10 +3,8 @@ import { favoriteRecipesReducer } from '../features/favoriteRecipes/favoriteReci
 import { searchTermReducer } from '../features/search/searchSlice.js';
 import { allRecipesReducer } from '../features/allRecipes/allRecipesSlice.js';
 
-const rootReducer = combineReducers({
+export const store = createStore(combineReducers({
   favoriteRecipes: favoriteRecipesReducer,
   searchTerm: searchTermReducer,
   allRecipes: allRecipesReducer
-});
-
-export const store = createStore(rootReducer);
+}));
